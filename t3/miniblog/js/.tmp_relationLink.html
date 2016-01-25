@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <TITLE> 友情链接  </TITLE>
+  <script type="text/javascript">
+	var $CONFIG = {
+		$lang			: "zh",
+		$oid			: "1874446737",
+		$uid			: "1874446737",
+		$product		: "miniblog"
+	};
+	var scope = $CONFIG;
+  </script>
+  <link href="relationLink.css" type="text/css" rel="stylesheet" />
+ </HEAD>
+
+ <BODY>
+ 	<div id="rela" class="relation">
+ 		<div class="title">
+ 			友情链接
+			<a href="#" id="setLink">设置</a>
+		</div>
+		<div id="linkOption" class="oper">
+			<ul >
+			   <li><a id="editLink" href="javascript:void(0)" >设置连接</a></li>
+			   <li><a id="hideLink" href="javascript:void(0)" >隐藏模块</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<ul>
+				<li><a href="javascript:void(0)" >阿迪达斯三叶草官方主页</a></li>
+				<li><a href="javascript:void(0)" >NIKE官方主页</a></li>
+				<li><a href="javascript:void(0)" >SINA微薄</a></li>
+			</ul>
+		</div>
+		
+		
+ 	</div>
+	<div id="operationLink" class="operLink">
+		<div class="title">
+			友情链接设置
+			<a id="closeSetLink" href="javascript:void(0)">X</a>
+		</div>
+		<div class="addLink">
+			<p>添加新的友情链接</p><br />
+			<div class="addName">
+				<p>链接名称：</p>
+				<input type="text" id="newLinkName" style="width:95%;" />
+			</div>
+			<div class="addURL">
+				<p>链接地址：</p>
+				<input type="text" id="newLinkURL" value="http://" style="width:95%;">
+			</div>
+			<p><button id="addBtn">&nbsp;&nbsp;添加链接&nbsp;&nbsp;</button></p>
+		</div>
+		<div class="modifyLink">
+			<p>管理已有友情链接</p>
+			<p style="background-color:lightgrey;margin:5px auto;">
+				<span>链接名称</span>
+				<span style="margin-left:20px;">链接地址</span>
+				<span style="margin-left:200px;">编辑</span>
+				<span style="margin-left:20px;">删除</span>
+			</p>
+			<div id="modi" class="modify">
+				<p style="margin:5px auto;">
+					<span>SINA微博</span>
+					<span style="margin-left:20px;">http://t.sina.com.cn</span>
+					<span style="margin-left:90px;"><img id="toEdit" src="page.gif" /></span>
+					<span style="margin-left:30px;"><img src="CloseButton.gif" /></span>
+				</p>
+			</div>
+		</div>
+	</div>
+  	<script type="text/javascript" src="http://tjs.sjs.sinajs.cn/t3/miniblog/js/relationLink.js?version=20101210185439"></script>
+ </BODY>
+</HTML>

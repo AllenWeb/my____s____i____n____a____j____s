@@ -1,0 +1,51 @@
+/*
+ * miniblog首页js
+ */
+$import("sina/sina.js");
+$import("sina/jobs.js");
+$import("sina/app.js");
+$import("diy/mb_dialog.js");
+$import("jobs/goTop.js");
+$import("jobs/miniblog_search.js");
+$import("jobs/mod_login.js");
+$import("jobs/topic.js");
+$import("jobs/commentConsole.js");
+$import("jobs/commentMethod.js");
+$import("jobs/indexMsgCallBack.js");
+$import("jobs/miniblog_del.js");
+$import("jobs/scaleimg.js");
+$import("jobs/topTray.js");
+$import("jobs/getfocus.js");
+$import("jobs/inputHandler.js");
+$import("jobs/bindMobileInfo.js");
+$import("jobs/favourite.js");
+$import("jobs/tag.js");
+//$import("diy/searchdialog_topic.js");
+$import("jobs/splitLoaderPlugin/splitLoadMedia.js");
+$import("jobs/publisher_dialog.js");
+$import("jobs/set_bless_icon.js");
+$import("jobs/suda.js");
+$import("jobs/search/keyword_filter.js");
+$import("jobs/medal.js");
+$import("jobs/autopublish.js");
+$import("jobs/refurbishNumber.js");
+$import("jobs/search/content_filter.js");
+function main(){
+    var jobs = new Jobs();
+    jobs.add("splitLoadMedia");
+    jobs.add("refurbishNumber");
+    jobs.add("initSearch");
+    jobs.add("hotsearch");
+    jobs.add("topic");
+    jobs.add("loadComment");
+    jobs.add("indexMsgCallBack");
+    jobs.add('init_input');
+    jobs.add("bind_mobile_info");
+    jobs.add("set_tag");
+    jobs.add("setBlessIcon");
+    jobs.add("keyword_filter");
+    jobs.add("start_suda");
+    jobs.add("medal");
+    jobs.add("content_filter");
+    jobs.start();
+}

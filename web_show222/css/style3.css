@@ -1,0 +1,539 @@
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	text-align:center;
+	font-size:12px;	
+}
+
+#total{
+	border:#000 1px solid;
+	width:80%;
+	margin:auto;
+}
+#header{
+	background:url(../images/head_bg_3.jpg) center;
+	margin:0;
+	height:60px;	
+}
+#logo{
+		margin:10px 0 10px 20px;
+		width:180px;
+		height:40px;
+		background:url(../images/logo1.jpg);
+		float:left;
+		display:inline;
+}
+#header #skin{
+	color:#FFF;
+	font-size:12px;	
+	background:#69F;
+	float:right;
+	margin:20px 20px 20px 0px;
+	height:12px;
+	display:inline;
+	line-height:12px;
+	padding:4px;
+	*padding-top:2px;
+}
+#skin ul{
+	list-style:none;
+	line-height:12px;
+	margin:0;
+	padding:0;
+}
+#skin ul li{
+	float:left;
+	margin:0;
+	padding:0;
+	margin-right:3px;
+	display:inline;
+}
+#skin ul #li1{
+	line-height:12px;
+	padding-top:2px;
+}
+#skin ul #li2{
+	line-height:12px;
+}
+#skin ul #li3{
+	line-height:12px;
+}
+#skin ul #li4{
+	line-height:12px;
+}
+input.bg1{	
+	height:12px;
+	width:20px;
+	background:#0F5C9B;
+	border:none;
+	cursor:pointer;
+}
+input.bg2{
+	height:12px;
+	width:20px;
+	background:#FDA229;
+	border:none;
+	cursor:pointer;
+}
+input.bg3{
+	height:12px;
+	width:20px;
+	background:#060;
+	border:none;
+	cursor:pointer;
+}
+input.bg4{
+	height:12px;
+	width:20px;
+	background:#E5D9BA;
+	border:none;
+	cursor:pointer;
+}
+	.back{
+		font-size:10px;
+		color:white;
+		padding:5px;	
+	
+	}
+	#contentDiv{
+		
+	/*	border:1px solid #222;*/
+		padding:20px;
+		margin-top:-2px;
+		position:relative;
+		z-index:1;
+	}
+	#title{		
+		height:28px;			
+	}
+
+	#topic1,#topic2,#topic3,#topic4{	
+		width:68px;
+		height:28px;
+		MARGIN-RIGHT: 5px;
+		FLOAT: left;
+		background:url(../images/nav.gif) no-repeat;
+		z-index:1;	
+		position:relative;
+		cursor:pointer;
+	}
+	#title .place1{
+	    margin-top:8px;
+		line-height:14px;
+		color:#1D598F;
+		font:14px bold ;
+	}
+	
+	#main{		
+		margin-top:-1px;
+		position:relative;
+	}
+	#content1{
+		padding:15px;
+		height:auto;
+		border:1px solid #999;
+		margin-top:-1px;
+	}
+	#seach{
+/*		z-index:100;
+		position:relative;*/
+		margin:10px;
+		text-align:right;	
+	}
+	#content2{
+		display:none;
+		padding:15px;
+		height:600px;
+		border:1px solid #999;
+	}
+	#content3{
+	display:none;
+	padding:15px 80px;
+	height:600px;
+	border:1px solid #999;
+	background:#F7F7F7;
+	text-align:center;
+	}
+	#content4{
+		display:none;
+		padding:15px;
+		height:600px;
+		border:1px solid #999;
+	}
+
+		#jiyu{
+		height:auto;		
+		border:1px solid #ccc;
+	}
+	.contextDiv1{
+	    padding-left:5px;
+		padding-top:5px;
+		height:20px;
+		background-color:#eee;
+		font-size:12px;
+		color:#999999;
+		text-align:left;
+	}
+	.contextDiv2{
+	     height:40px;
+		 background-color:#fff;
+		 font-size:14px;
+		 text-align:left;
+		 padding-left:5px;
+		padding-top:5px;
+	}
+#page{
+	text-align:center;
+	font-size:12px;
+	margin:10px 0;
+}
+#page input{
+	padding:1px 3px;
+	background:#FFF;
+	color:#00F;
+	border:1px solid #00F;
+	cursor:pointer;
+	margin:0px 2px;
+}
+#page #foot1,#page #foot1{
+	color:#00F;
+}
+#page #lastPage,#page #first,#page #last,#page #nextPage{
+	padding:1px;
+	background:#FFF;
+	color:#060;
+	border:1px solid #060;
+	cursor:pointer;
+	margin:0px 2px;
+}
+#leftmenu {
+		width:161px;
+		height:610px;
+		padding:0px;
+		margin-right:10px;
+		background:url(../images/menu.jpg) no-repeat;
+		float:left;
+}
+#y1{
+	background:url(../images/nolines_plus.gif) no-repeat;
+}
+#y2{
+	background:url(../images/nolines_plus.gif) no-repeat;
+}
+#y3{
+	background:url(../images/nolines_plus.gif) no-repeat;
+}
+#menu{
+	margin:20px 0px 0px 10px;
+	width:150px;
+	background:url(../images/nolines_plus.gif) no-repeat;
+	background-position:center left;
+	cursor:pointer;
+}
+#menu p{
+	font-size:14px;
+}
+#year{
+	display:none;
+}
+#year1,#year2,#year3,#year4,#year5,#year6{
+	font-size:12px;
+	width:75px;
+	margin:10px auto 0px 30px;
+	background:url(../images/nolines_plus.gif) no-repeat;
+	background-position:center left ;
+	cursor:pointer;
+}
+
+#menu1,#menu2,#menu3,#menu4,#menu5,#menu6{	
+	display:none;
+}
+#menu1 .month1,#menu2 .month1,#menu3 .month1,#menu4 .month1,#menu5 .month1,#menu6 .month1{
+	font-size:12px;
+	width:95px;
+	margin:5px auto 0px 50px;
+	background:url(../images/nolines_plus.gif) no-repeat;
+	background-position:center left ;
+	cursor:pointer;
+}
+#preview{
+	position:relative;
+	*left:-3px;
+	height:605px;
+	overflow-y:auto;
+	padding:0px;
+	border:1px solid gray;
+}
+#pic_top{
+	margin:1px auto;
+	text-align:left;
+	height:auto;
+	background-image:url('../images/tool_bg.jpg');
+	background-repeat:repeat-x;
+}
+#pic_top_title{
+	float:left;
+	font-size:12px;
+	color:black;
+	margin-left:15px;
+	margin-top:10px;
+	height:22px;
+	width:300px;
+	line-height:22px;
+}
+#pic_top button{
+	width:80px;
+	height:20px;
+	margin:10px 5px 0px 5px;
+}
+#pic_top  #xunHuan{
+	margin-left:10px;
+}
+#pic_view{
+	margin:10px auto 10px 10px;
+	padding:3px 0px;
+	height:490px;
+	overflow-y:auto;
+}
+#pic_view img{
+	margin:5px;
+	padding:1px;
+	border:2px solid #EDEDED;
+	width:126px;
+	height:122px;
+	cursor:pointer;
+	display:inline;
+	float:left;
+}
+#pic_page  .photo_show{
+	padding:1px 3px;
+	background:#FFF;
+	color:#00F;
+	border:1px solid #00F;
+	cursor:pointer;
+	margin:0px 2px;
+}
+#picarea{
+	height:600px;
+	margin-left:200px;
+	border:1px solid #ccc;
+}
+#pic_con{
+	height:400px;
+	margin:50px 50px;
+	border:1px solid #ccc;
+}
+.rotation {background:red;width:90px;height:22px;border-
+
+width:0;cursor:pointer;}
+#tool{
+	height:50px;
+	
+}
+
+
+/***********************************************************/
+	#imageFlow {
+		background: #222;
+		width:100%;
+		height:100%;
+		margin:0;
+	}
+	#imageFlow .diapo {
+		position: absolute;
+		cursor: pointer;
+	}
+	#imageFlow .link {
+		border: dotted #fff 1px;
+		margin-left: -1px;
+		margin-bottom: -1px;
+	}
+	#imageFlow .bank {
+		visibility: hidden;
+	}
+	#imageFlow .top {
+		position: absolute;
+		width: 100%;
+		height: 40%;
+		background: #181818;
+	}
+	#imageFlow .text {
+		position: absolute;
+		left: 0px;
+		width: 100%;
+		bottom: 16%;
+		text-align: center;
+		color: #FFF;
+		font-family: verdana, arial, Helvetica, sans-serif;
+		z-index: 1000;
+	}
+	#imageFlow .title {
+		font-size: 0.9em;
+		font-weight: bold;
+	}
+	#imageFlow .legend {
+		font-size: 0.8em;
+	}
+	#imageFlow .scrollbar {
+		position: absolute;
+		left: 10%;
+		bottom: 10%;
+		width: 80%;
+		height: 16px;
+		z-index: 1000;
+	}
+	#imageFlow .track {
+		position: absolute;
+		left: 1%;
+		width: 98%;
+		height: 16px;
+		filter: alpha(opacity=30);
+		opacity: 0.3;
+	}
+	#imageFlow .arrow-left {
+		position: absolute;
+	}
+	#imageFlow .arrow-right {
+		position: absolute;
+		right: 0px;
+	}
+	#imageFlow .bar {
+		position: absolute;
+		height: 16px;
+		left: 25px;
+	}
+	<!-- ---------------日历+课程表---------------- -->
+            #jcalendar { 
+				margin:0;
+				padding:0;
+                width:784px; 				
+                float:left;
+				display:inline;
+				text-align:center;
+            } 
+			#jcalendar .seacher{
+				float:left;
+				height:30px;
+				width:400px;
+				margin:5px 192px;
+				line-height:30px;
+				vertical-align:middle;
+				border:1px #060 solid;
+				font-size:25px;
+				background:#FFF;
+            }
+			#jcalendar .seacher input{
+				border:0px;
+				font-size:20px;
+				font-weight:bolder;
+				margin:0 10px;
+            }
+			#jcalendar .seacher .s_button{
+				background:url(../images/seach.jpg) no-repeat;
+				height:28px;
+				margin-left:10px;
+				width:30px;
+				cursor:pointer;
+            }
+            #jcalendar .tit { 
+                float:left; 
+                width:784px; 
+                height:30px; 
+                color:#900;
+                font-weight:bolder; 
+				line-height:30px;
+				font-size:25px;
+				background:#FFF;
+				text-align:center;
+            }			
+            #jcalendar .week {
+				width:112px;
+                color:#808080;
+				height:25px;
+				vertical-align:middle;
+				line-height:25px;
+				border-top:#060 1px solid;			
+            } 
+			#jcalendar .button{
+				cursor:pointer;
+			}
+
+			#jcalendar .day{
+				background:url(../images/day1.jpg) repeat-x;			
+				display:inline;
+			}
+			#jcalendar .ls{
+                float:left; 
+                width:110px; 
+                text-align:center; 
+                text-decoration:none;
+				display:inline;
+				border:#0C0 1px solid;
+			}
+            #jcalendar .current{ 
+                background:url(../images/day1_1.jpg) repeat-x; 
+                color:#F00;
+				font-weight:bolder;
+			
+            }
+			#jcalendar .current2{ 
+                background:#F894EB;
+				font-weight:bolder;
+				float:left; 
+                width:110px; 
+                height:75px; 	
+                text-align:center;
+				color:#F00;
+				font-size:15px;
+            }
+			#jcalendar .weekend{ 
+                background:url(../images/day1.jpg) repeat-x;color:#F00;
+				font-weight:bolder;
+				display:inline;
+            } 
+            #jcalendar a { 
+                display:block; 
+                float:left; 
+                width:110px; 
+                height:15px; 
+                color:#000; 
+                line-height:20px; 
+                text-align:center; 
+                text-decoration:none;
+				cursor:pointer;
+            }
+
+			#jcalendar .kc { 
+                float:left; 
+                width:110px; 
+                height:75px; 
+				background:#FFF;
+                text-align:center;			
+				display:inline;
+				font-size:12px;
+				color:#000;
+            }
+  			#jcalendar .null_day{
+                background:url(../images/day1.jpg) repeat-x;}
+			#jcalendar .null_kc { 
+                float:left; 
+                width:110px; 
+                height:75px; 
+				background:#060;		
+            }
+			#jcalendar p.lesson{
+				margin:3px 5px;
+				padding:0;
+				background:url(../images/lesson3_1.jpg) repeat-y;
+				font-size:12px;
+				line-height:12px;
+			}
+			#jcalendar p.s_lesson{
+				margin:3px 5px;
+				padding:0;
+				background:url(../images/lesson3.jpg);
+				font-size:12px;
+				line-height:12px;
+			}

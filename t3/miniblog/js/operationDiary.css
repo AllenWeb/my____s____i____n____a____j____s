@@ -1,0 +1,19 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+.paramPanel {
+	margin:1px auto 20px 300px;
+	width:600px;
+	height:100px;
+	background-color:lightgrey;
+	border:1px solid gray;
+}
+.content {
+	margin-left:300px;
+	width:600px;
+	height:500px;
+	background-color:white;
+	border:1px solid gray;
+}

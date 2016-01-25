@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+  <TITLE> 欢迎来到六度空间 </TITLE>
+	<link id="choose" rel="stylesheet" type="text/css" href="css/style1.css">
+	<!-- <link  rel="stylesheet" type="text/css" href="css/lightbox.css"> -->
+		<!-- <script type="text/javascript" src="js/jiyu.js"></script>  
+		<script type="text/javascript" src="js/search.js"></script>   -->
+		<script type="text/javascript" src="js/getRequest.js"></script> 
+		<script type="text/javascript" src="js/ajax_photo.js"></script>
+		<script type="text/javascript" src="js/lesson.js"></script> 
+		<script type="text/javascript" src="js/calendar.js"></script>
+		<!-- <script type="text/javascript" src="js/lightbox.js"></script>
+		<script type="text/javascript" src="js/xhbf.js"></script> -->
+		<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript" src="js/jiyu_search.js"></script>
+		
+ </HEAD>
+
+ <BODY>
+ <div id="total">
+	<div id="header">
+		<div id="logo">				
+		</div>
+		<div id="skin">	
+        	<ul>	
+        	  <li id="li1">选择背景:</li>	          
+              <li id="li2"><input type="button" class="bg1" id="backg1"></li>
+              <li id="li3"><input type="button" class="bg2" id="backg2"></li>
+              <li id="li4"><input type="button" class="bg3" id="backg3"></li>
+              <li id="li5"><input type="button" class="bg4" id="backg4"></li>
+            </ul>		
+        </div>
+	</div>
+	<div id="contentDiv">	
+		<div id="title">
+			<div id="topic1"><p class="place1" align="center">寄语</p></div>
+			<div id="topic2"><p class="place1" align="center">相册</p></div>
+			<div id="topic3"><p class="place1" align="center">课程表</p></div>
+			<div id="topic4"><p class="place1" align="center">成员介绍</p></div>
+		</div>
+		
+		<div id="main" >
+			<div  id="content1">
+				
+				<div id="seach">
+						<input type="text" id="keyword"size="40"/>
+						<input type="button" id="searchKey" value="本站搜索" />
+				</div>
+				<div id="jiyu"></div>
+				<div id="page" align="center">	
+					<input type="button" class="show" id="lastPage" value="上一页" />
+					<span id="foot1">
+						<input type="button" class="show" value="首页" name="page" id="first"/>
+						...
+					</span>
+					<span id="foot_middle"></span>
+					<span id="foot2">
+						...
+						<input type="button" class="show" value="尾页" name="page" id="last"/>
+					</span>
+					<input type="button" class="show" id="nextPage" value="下一页"/>	
+				</div>
+			</div>
+			
+			<div id="content2">
+				   <div id="leftmenu">
+						<div id="menu"><p>六度空间团队相册</p></div>
+						<div id="year">
+								<div id="year1"><p>战&nbsp;铖</p></div>
+								<div id="menu1">
+									<div class="month1" id="item0"><p>romantic</p></div>
+									<div class="month1" id="item1"><p>belle</p></div>
+								</div>	
+								<div id="year2"><p>范学亮</p></div>
+								<div id="menu2">
+									<div class="month1" id="item2"><p>fantasy</p></div>
+									<div class="month1" id="item3"><p>caricature</p></div>
+								</div>
+								<div id="year3"><p>郭志伟</p></div>
+								<div id="menu3">
+									<div class="month1" id="item4"><p>after90</p></div>
+									<div class="month1" id="item5"><p>theme</p></div>
+								</div>
+								<div id="year4"><p>张燕燕</p></div>
+								<div id="menu4">
+									<div class="month1" id="item6"><p>scenery</p></div>
+									<div class="month1" id="item7"><p>desolation</p></div>
+								</div>
+								<div id="year5"><p>宋德彬</p></div>
+								<div id="menu5">
+									<div class="month1" id="item8"><p>yearn</p></div>
+								</div>
+								<div id="year6"><p>陈志能</p></div>
+								<div id="menu6">
+									<div class="month1" id="item9"><p>wallpaper</p></div>
+								</div>
+						</div>
+					</div>
+
+			<div id="preview">
+				<div id="pic_top">
+					<div id="pic_top_title"></div>
+					<button id="xunHuan">循环播放</button>
+					<button id="copy">复制URL</button>
+					<button id="help">帮助</button>
+					<button id="about">关于</button>
+				</div>
+				<div id="pic_view">
+					<img src="images/pic_1.jpg" alt="pic_1" title="pic_1"/>
+					<img src="images/pic_2.jpg" alt="pic_2" title="pic_2"/>
+					<img src="images/pic_3.jpg" alt="pic_3" title="pic_3"/>
+					<img src="images/pic_4.jpg" alt="pic_4" title="pic_4"/>
+					<img src="images/pic_5.jpg" alt="pic_5" title="pic_5"/>
+					<img src="images/pic_6.jpg" alt="pic_6" title="pic_6"/>
+					<img src="images/pic_1.jpg" alt="pic_1" title="pic_1"/>
+					<img src="images/pic_2.jpg" alt="pic_2" title="pic_2"/>
+					<img src="images/pic_3.jpg" alt="pic_3" title="pic_3"/>
+					<img src="images/pic_4.jpg" alt="pic_4" title="pic_4"/>
+					<img src="images/pic_5.jpg" alt="pic_5" title="pic_5"/>
+					<img src="images/pic_6.jpg" alt="pic_6" title="pic_6"/>
+					<img src="images/pic_1.jpg" alt="pic_1" title="pic_1"/>
+					<img src="images/pic_2.jpg" alt="pic_2" title="pic_2"/>
+					<img src="images/pic_3.jpg" alt="pic_3" title="pic_3"/>
+				</div>
+				
+				<div id="pic_page"></div>
+			</div>
+		</div>
+		
+			<div id="content3"></div>
+		
+			<div  id="content4">
+			nihao
+			</div>	
+		</div>
+		
+	</div>
+</div>	
+</BODY>
+</HTML>

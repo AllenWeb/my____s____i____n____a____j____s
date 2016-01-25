@@ -1,0 +1,124 @@
+* {
+	margin : 0px;
+	padding : 0px;
+}
+
+.relation {
+	margin:100px auto auto 100px;
+	border: 1px solid gray;
+	width:300px;
+	height:200px;
+	position:absolute;
+}
+
+.relation .title {
+	width:100%;
+	background-color:#C0C0C0;
+}
+
+.relation .title a {
+	margin-right:10px;
+	float:right;
+	text-decoration:none;
+}
+
+.relation .oper {
+	float:right;
+	width:60px;
+	height:70px;
+	border:1px solid gray;
+	display:none;
+	z-index:100;
+}
+
+.relation .oper ul li {
+	list-style-type:none;
+	font-size:12px;
+	margin:7px 2px;
+}
+
+.relation .content {
+	width:100%;
+	height:100%;
+}
+
+.relation .content ul li {
+	margin:10px 12px;
+	list-style-type:none;
+}
+
+.operLink {
+	position:absolute;
+	z-index:200;
+	margin:130px auto auto 230px;
+	width:500px;
+	height:300px;
+	border:1px solid gray;
+	background-color:white;
+	display:none;
+}
+.operLink .title {
+	width:100%;
+	background-color:#C0C0C0;
+}
+.operLink .title a {
+	margin-right:10px;
+	float:right;
+	text-decoration:none;
+}
+.operLink .addLink {
+	margin:5px;
+	border-bottom:1px solid gray;
+	padding-left:10px;
+	width:480px;
+	height:45%;
+}
+.operLink .addLink .addName {
+	width:20%;
+	height:60px;
+	float:left;
+}
+.operLink .addLink .addURL {
+	width:75%;
+	height:60px;
+	float:left;
+}
+.operLink .modifyLink {
+	margin:5px;
+	width:480px;
+	height:45%;
+}
+.operLink .modifyLink .modify {
+	width:480px;
+	height:55%;
+	border:1px solid gray;
+}
+
+.editP {
+	height:30px;
+	background-color:#FFFF66;
+}
+.editLinkName {
+	width:60px;
+	margin-top:3px;
+	margin-left:3px;
+	border:1px solid black;
+	background-color:#CCCCFF;
+	height:80%;
+	font-size:16px;
+}
+.editLinkURL {
+	width:180px;
+	margin-top:3px;
+	margin-left:20px;
+	border:1px solid black;
+	background-color:#CCCCFF;
+	height:80%;
+	font-size:16px;
+}
+.btnOk {
+	margin-left:90px;
+}
+.btnCancel {
+	margin-left:30px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <TITLE> 操作日志  </TITLE>
+  <script type="text/javascript">
+	var $CONFIG = {
+		$lang			: "zh",
+		$oid			: "1874446737",
+		$uid			: "1874446737",
+		$product		: "miniblog"
+	};
+	var scope = $CONFIG;
+  </script>
+  <link href="operationDiary.css" type="text/css" rel="stylesheet" />
+ </HEAD>
+ <BODY>
+ 	<p style="margin:10px auto 2px 300px;">操作日志</p>
+ 	<div class="paramPanel">
+ 		操作类型：
+		<select id="operType" class="">
+			<option value="全部" selected="true">全部</option>
+			<option value="私信-回复">私信-回复</option>
+			<option value="评论-转发">评论-转发</option>
+			<option value="评论-回复">评论-回复</option>
+			<option value="评论-已读">评论-已读</option>
+			<option value="评论-未读">评论-未读</option>
+ 		</select>
+		<select id="manager" class="">
+			<option value="选择管理员" selected="true">选择管理员</option>
+			<option value="管理员1">管理员1</option>
+			<option value="管理员2">管理员2</option>
+			<option value="管理员3">管理员3</option>
+			<option value="管理员4">管理员4</option>
+ 		</select>	
+		<input type="text" value="输入你想要找的关键字">	
+		<p><br /></p><p></p>
+		操作时间：
+		<input type="text" value="开始时间" /><img src="window_12.gif" />
+		<input type="text" value="结束时间" /><img src="window_12.gif" />
+		<button>搜索</button>
+ 	</div>
+	<div id="" class="content">
+	</div>
+   	<script type="text/javascript" src="http://tjs.sjs.sinajs.cn/t3/miniblog/js/operationDiary.js?version=20101210185439"></script>
+ </BODY>
+</HTML>

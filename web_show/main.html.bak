@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /> 
+  <TITLE> 欢迎来到六度空间 </TITLE>
+	<link id="choose" rel="stylesheet" type="text/css" href="css/style1.css">
+		<!-- <script type="text/javascript" src="js/page.js"></script>  -->
+		<script type="text/javascript" src="js/getRequest.js"></script> 
+		<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript" src="js/xhbf.js"></script>
+	<script>
+		function showmodal(){   
+			var ret = window.showModalDialog("showimg.html",null,"dialogWidth:550px;dialogHeight:450px;help:no;status:no;center:on;");   
+				 if (ret){alert('子窗口返回真!');   
+				}else{   
+					alert('子窗口返回假!');   
+					}   
+		}   
+	</script>  
+
+
+ </HEAD>
+
+ <BODY onload="btn();addEvent();" >
+ <div id="total">
+	<div id="header">
+		<div id="logo">				
+		</div>
+		<div id="skin">	
+        	<ul>	
+        	  <li id="li1">选择背景:</li>	          
+              <li id="li2"><input type="button" class="bg1" id="backg1"></li>
+              <li id="li3"><input type="button" class="bg2" id="backg2"></li>
+              <li id="li4"><input type="button" class="bg3" id="backg3"></li>
+              <li id="li5"><input type="button" class="bg4" id="backg4"></li>
+            </ul>		
+        </div>
+	</div>
+
+
+	<div id="contentDiv">	
+
+		<div id="title">
+			<div id="topic1"><p id="place" align="center">寄语</p></div>
+			<div id="topic2"><p id="place" align="center">相册</p></div>
+			<div id="topic3"><p id="place" align="center">课程表</p></div>
+			<div id="topic4"><p id="place" align="center">成员介绍</p></div>
+		</div>
+		
+	<div id="main" >
+		<div  id="content1">
+            
+            <div id="seach">
+            	<input type="text" size="40"><input type="button" value="搜搜">
+            </div>
+            
+            <div id="jiyu">
+               
+            </div>
+    
+            <div id="page" align="center">
+                
+				<input type="button" class="show" id="lastPage" value="上一页">
+				<span id="foot1">
+					<input type="button" class="show" value="1" name="page" id="first">
+					...
+				</span>
+				<span id="foot_middle"></span>
+				<span id="foot2">
+					...
+					<input type="button" class="show" value="" name="page" id="last">
+				</span>
+				<input type="button" class="show" id="nextPage" value="下一页">
+				
+            </div>
+		</div>
+	
+		<div id="content2">
+				   <div id="leftmenu">
+						<div id="menu" onclick="showyear('year')"><a href="#">&nbsp;&nbsp;团队相册</a></div>
+							<div id="year" >
+									<div id="year1" onclick="showmonth('menu1')"><a  href="#">&nbsp;&nbsp;2004年以前</a></div>
+										<div id="menu1">
+											<div id="month" onclick="monthclick()"><a href="#">&nbsp;&nbsp;2003年</a></div>
+											<div id="month" onclick="monthclick()"><a href="#">&nbsp;&nbsp;2002年</a></div>
+											<div id="month" onclick="monthclick()"><a href="#">&nbsp;&nbsp;2001年</a></div>
+											<div id="month" onclick="monthclick()"><a href="#">&nbsp;&nbsp;2000年</a></div>
+										</div>	
+								
+										
+
+									<div id="year2" onclick="showmonth('menu2')"><a  href="#">&nbsp;&nbsp;2005年</a></div>
+										<div id="menu2">
+										<div id="month" onclick="monthclick()"><a href="#">&nbsp;&nbsp;10月以前</a></div>
+										<div id="month" onclick="monthclick()"><a href="#">&nbsp;&nbsp;11月</a></div>
+										<div id="month" onclick="monthclick()"><a href="#">&nbsp;&nbsp;12月</a></div>
+										</div>
+
+									<div id="year3" onclick="showmonth('menu3')"><a  href="#">2006年</a></div>
+										<div id="menu3">
+										<div id="month" onclick="monthclick()"><a href="#">&nbsp;&nbsp;1月</a></div>
+										</div>
+							</div>
+						</div>
+
+			<div id="preview" style="position:relative;margin-left:170px;height:605px;overflow-y:auto;border:1px solid gray;">
+				<div id="pic_top" style="margin:1px auto;background-image:url('images/tool_bg.jpg');background-repeat:repeat-x;">
+					&nbsp;<font style="font-size:16px;font-weight:bold;color:black;">六度空间->2009年->11月</font>&nbsp;&nbsp;
+					<button id="xunHuan" style="margin:2px auto 2px 10px;">&nbsp;&nbsp;循环播放&nbsp;&nbsp;</button>
+					<button style="margin:2px auto 2px 10px;">&nbsp;&nbsp;复制URL&nbsp;&nbsp;</button>
+					<button style="margin:2px auto 2px 10px;">&nbsp;&nbsp;帮助&nbsp;&nbsp;</button>
+					<button style="margin:2px auto 2px 10px;">&nbsp;&nbsp;关于&nbsp;&nbsp;</button>
+				</div>
+				<div id="pic_view" style="margin:3px auto;padding:3px 0px;height:490px;overflow-y:auto;">
+					<img onclick="showmodal();" style="border:1px solid gray;width:126px;height:122px;cursor:pointer;" src="images/pic_1.jpg" alt="pic_1" title="pic_1"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_2.jpg" alt="pic_2" title="pic_2"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_3.jpg" alt="pic_3" title="pic_3"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_4.jpg" alt="pic_4" title="pic_4"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_5.jpg" alt="pic_5" title="pic_5"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_6.jpg" alt="pic_6" title="pic_6"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_1.jpg" alt="pic_1" title="pic_1"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_2.jpg" alt="pic_2" title="pic_2"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_3.jpg" alt="pic_3" title="pic_3"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_4.jpg" alt="pic_4" title="pic_4"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_5.jpg" alt="pic_5" title="pic_5"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_6.jpg" alt="pic_6" title="pic_6"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_1.jpg" alt="pic_1" title="pic_1"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_2.jpg" alt="pic_2" title="pic_2"/>
+					<img style="border:1px solid gray;width:126px;height:122px;" src="images/pic_3.jpg" alt="pic_3" title="pic_3"/>
+				</div>
+				
+				<div id="pic_page" style="background-image:url('images/tool_bg.jpg');">
+					<input type="button" value="1" />
+					<input type="button" value="2" />
+					<input type="button" value="3" />
+					<input type="button" value="4" />
+					<input type="button" value="5" />
+					<input type="button" value="6" />
+					<input type="button" value="7" />
+					<input type="button" value="8" />
+					<input type="button" value="9" />
+					<input type="button" value="..." />
+					<input type="button" value="20" />
+				</div>
+			</div>
+		</div>
+	
+		<div id="content3">
+		我是中国人
+		</div>
+	
+		<div  id="content4">
+
+			<div id="imageFlow">
+				<div class="top"></div>
+					<div class="bank">
+						<a rel="ct37.jpg" title="Myselves">My identity lies in not knowing who I am</a>
+						<a rel="ct60.jpg" title="Discoveries">...are made by not following instructions</a>
+						<a rel="sf53.jpg" title="Nothing">...can come between us</a>
+						<a rel="sf48.jpg" title="New life" >Here you come!</a>
+						<a rel="ct81.jpg" title="Optimists">They don't know all the facts yet</a>
+						<a rel="ct134.jpg" title="Empathy" >Emotional intimacy</a>
+					</div>
+
+					<div class="text">
+						<div class="title">Loading</div>
+						<div class="legend">Please wait...</div>
+					</div>
+					<div class="scrollbar">
+						<img class="track" src="sb.gif" alt="">
+						<img class="arrow-left" src="sl.gif" alt="">
+						<img class="arrow-right" src="sr.gif" alt="">
+						<img class="bar" src="sc.gif" alt="">
+					</div>
+			</div>
+		
+		</div>	
+	</div>
+
+</div>
+
+<div id="huandengpianbofang" style="width:1010px;height:659px;border:none;display:none;text-align:center;">
+	<div id="xdp_tool" style="margin:20px auto;">
+		&nbsp;<font style="font-size:16px;font-weight:bold;color:#993366;">当前位置：播放幻灯片</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="quanpingbofang.html" id="fullScreen" style="text-decoration:none;font-size:16px;font-weight:bold;background-color:#CCFFCC;" Onfocus=this.blur();>全屏播放</a>
+		<a href="#" id="stop" style="text-decoration:none;font-size:16px;font-weight:bold;background-color:#CCFFCC;" Onfocus=this.blur();>暂停</a>
+		<a href="#" id="continue" style="text-decoration:none;font-size:16px;font-weight:bold;background-color:#CCFFCC;" Onfocus=this.blur();>继续</a>
+		<a href="#" id="turn_back"style="text-decoration:none;font-size:16px;font-weight:bold;background-color:#CCFFCC;" Onfocus=this.blur();>返回</a>
+	</div>
+	<div id="HuanDengPian" style="margin:3px auto;padding:3px 0px;width:auto;height:auto;border:none;">
+
+		<img id="view" src="images/pic_1.jpg"/>
+		
+	</div>
+</div>
+
+</div>	
+
+</BODY>
+</HTML>

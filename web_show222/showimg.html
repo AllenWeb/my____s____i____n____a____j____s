@@ -1,0 +1,96 @@
+<html> 
+<head> 
+<title>查看图片</title> 
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"> 
+
+<style type="text/css"> 
+#divall { 
+position:relative; 
+} 
+#divleft { 
+border:1px red solid; 
+border-right:0px red solid; 
+background: url(bg.gif); 
+cursor:url("img/pre.cur"),auto; 
+position:absolute; 
+top:0px; 
+z-index:2007; 
+text-align:right; 
+padding:0px 
+} 
+#divright { 
+border:1px red solid; 
+border-left:0px red solid; 
+background: url(bg.gif); 
+cursor:url(img/next.cur),auto; 
+top:0px; 
+position:absolute; 
+z-index:2007 
+text-align:center; 
+padding:0px 
+} 
+#tu{
+height:400px;
+width:500px;
+z-index:-2007} 
+</style> 
+<script language="javascript" > 
+var zhang=2 ;
+function next(){ 
+if(zhang==7){ 
+alert("这已经是最后一张了!") ;
+zhang=6 ;
+} 
+document.getElementById("tu").src="img/"+zhang+"large.jpg" ;
+text.innerHTML="当前是第"+zhang+"张图片" ;
+zhang++ ;
+} 
+function up(){ 
+if(zhang==2){ 
+alert("这已经是第一张了!") ;
+zhang=3 ;
+} 
+document.getElementById("tu").src="img/"+(zhang-2)+"large.jpg" ;
+text.innerHTML="当前是第"+(zhang-2)+"张图片" ;
+zhang-- ;
+} 
+</script> 
+
+</head> 
+<body bgcolor="#FFFFFF"> 
+<div id="text" >当前是第1张图片</div> 
+<div id="divall"> 
+<img src="img/1large.jpg" id="tu"> 
+
+<div id="divleft" title="上一张"  onmouseout="hide_div('divleft')" onclick="up()"> 
+</div> 
+
+<div id="divright" title="下一张"  onmouseout="hide_div('divright')" onclick="next()"> 
+</div> 
+</div> 
+<script>// 
+
+var w=document.getElementById("tu").width;//500 
+var h=document.getElementById("tu").height;//400 
+document.getElementById("tu").style.width=w; 
+document.getElementById("tu").style.height=h; 
+
+//document.getElementById("divleft").style.visibility='hidden' 
+document.getElementById("divleft").style.width=w/2;
+document.getElementById("divleft").style.height=h ;
+document.getElementById("divleft").style.left=0 ;
+
+//document.getElementById("divright").style.visibility='hidden' 
+document.getElementById("divright").style.width=w/2;
+document.getElementById("divright").style.height=h ;
+document.getElementById("divright").style.left=w/2 ;
+
+//document.write("<style> #tu{width:"+w+"px; height:"+h+"px;z-index:2000}</style>") 
+
+function hide_div(id){ 
+document.getElementById(id).innerHTML="" ;
+} 
+</script> 
+
+</body>
+</html>
